@@ -1,54 +1,49 @@
 # LegalMind Assistant
 
-LegalMind is a legal assistant powered by AI that attends meetings, creates transcripts, and does actual-world legal work for your business. The app uses the MeetStream API to attend meetings, record transcripts, and subsequently processes these transcripts with advanced AI to pull out actionable legal information.
+LegalMind is an AI-powered legal assistant that joins meetings, generates transcripts, and performs real-world legal tasks for your company. The application leverages the MeetStream API to join meetings, record transcripts, and then processes these transcripts using advanced AI to extract actionable legal insights.
 
 ## Features
 
-- ???? **Meeting Integration**: Easily attend Zoom and Google Meet meetings to record and transcribe conversations
-- ???? **Automated Transcription**: Create precise transcripts of all meeting material
-- ???? **AI-Powered Analysis**: Analyze meeting transcripts to determine legal conclusions and actions
-- ????️ **Compliance & Risk Management**: Detect regulatory compliance, legal risks, ethics, and workplace safety concerns
-- ???? **Contract Management**: Monitor contracts, renewals, and legal documents
-- ???? **IP & Tech Law Support**: Monitor intellectual property, software licensing, and data privacy issues
-- ???? **Corporate Governance**: Accommodate board functions and hold legal structure
-- ????‍⚖️ **Litigation Management**: Monitor disputes, investigations, and M&A legal matters
+- 🎯 **Meeting Integration**: Seamlessly join Zoom and Google Meet meetings to capture and transcribe discussions
+- 📝 **Automated Transcription**: Generate accurate transcripts of all meeting content
+- 🤖 **AI-Powered Analysis**: Process meeting transcripts to extract legal insights and actions
+- 🛡️ **Compliance & Risk Management**: Identify regulatory compliance, legal risks, ethics, and workplace safety issues
+- 🧾 **Contract Management**: Track contracts, renewals, and legal documents
+- 🧠 **IP & Tech Law Support**: Monitor intellectual property, software licensing, and data privacy concerns
+- 📜 **Corporate Governance**: Support board functions and maintain legal structure
+- 👨‍⚖️ **Litigation Management**: Track disputes, investigations, and M&A legal aspects
 
 ## Architecture
 
-The app is developed with Streamlit and designed into the below components:
+The application is built using Streamlit and organized into the following components:
 
-- **UI**: Stunning, interactive user interface to visualize and oversee legal insights
-- **Services**: MeetStream integration, Zoom OAuth, and AI processing frameworks
-- **Models**: Legal task definitions and processors to govern insights and actions
-- **Utils**: Data processing and formatting helper functions
+- **UI**: Beautiful, interactive user interface for visualizing and managing legal insights
+- **Services**: Integration with MeetStream, Zoom OAuth, and AI processing systems
+- **Models**: Legal task definitions and processors for managing insights and actions
+- **Utils**: Helper functions for data processing and formatting
 
 ## Setup Instructions
 
 ### Prerequisites
 
-- Python 3.8 or greater
+- Python 3.8 or higher
 - Pip package manager
 
 ### Installation
 
-1. Create the repository by cloning or directory structure:
+1. Clone the repository or create the directory structure:
 
 ```bash
 mkdir -p legal_assistant/services legal_assistant/models legal_assistant/ui legal_assistant/utils
 ```
 
-2. Install the necessary packages:
+2. Install the required dependencies:
 
 ```bash
 pip install streamlit requests openai pandas plotly python-dotenv
 ```
 
-3. Initialize the required files as indicated in the directory structure, copying code for each file within this repository.
+3. Create the necessary files as shown in the directory structure, copying the code from each file in this repository.
 
-4. Create a root directory `.env` file that contains your API keys (if needed):
+4. Create a `.env` file in the root directory with your API keys (optional):
 
-```bash
-MEETSTREAM_API_URL=https://api-meetstream-tst-hackathon.meetstream.ai/api/v1
-MEETSTREAM_API_KEY=ms_XQmQZPip5wmTPMNqlgUVwhqLpsnxW1sy
-ZOOM_CLIENT_ID=qTMTH
-```
